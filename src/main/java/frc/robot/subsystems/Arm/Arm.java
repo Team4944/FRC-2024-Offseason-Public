@@ -63,11 +63,11 @@ public class Arm extends SubsystemBase {
   }
 
   public Rotation2d getAngle() {
-    return Rotation2d.fromRotations(m_armLeader.getPosition().getValue());
+    return Rotation2d.fromRotations(m_armLeader.getPosition().getValueAsDouble());
   }
 
   public double getVoltageOut() {
-    return m_armLeader.getMotorVoltage().getValue();
+    return m_armLeader.getMotorVoltage().getValueAsDouble();
   }
 
   public void stop() {
